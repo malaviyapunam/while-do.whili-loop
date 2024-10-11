@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// ===================(1 = Print out series 1,4,9,16,.....,n)================
+
+//     let i = 1;
+//     let n = prompt("enter a number =" )
+//     while (i <=n)
+// {
+//     console.log(i*i);
+//     i++;
+// }
+
+//===================(2 = Print out series 1,4,3,16,5,...,n)================
+
+// let i = 1;
+// let n = prompt("enter a number =" )
+// do {
+//     if (i % 2 === 0) {
+//         console.log(i * i);
+//     } else {
+//         console.log(i); 
+//     }
+//     i++;
+// } while (i <= n);
+
+// ===================(3 = Print out series 1,2,4,8,16,...,n)==================
+// let n = prompt("enter a number =" )
+// let i = 1;
+// while (i <= n) {
+//     console.log(i);
+//     i *= 2; // Multiply by 2 for the next term
+// }
+
+// =================(4 = Print out series 1,4,12,32,80,...,n)====================
+// let n = prompt("enter a number =" )
+// let current = 1; 
+// let index = 0; 
+// do {
+//     console.log(current);
+//     if (index === 0) {
+//         current = 4;
+//     } else if (index === 1) {
+//         current = 12;
+//     } else if (index === 2) {
+//         current = 32;
+//     } else if (index === 3) {
+//         current = 80;
+//     } else {
+//         current *= 2.5;
+//     }
+//     index++; 
+// } while (current <= n);
+
+// ================(5 = Find the sum of numbers from 1 to 100)==================
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//     sum += i;
+// }
+// console.log("The sum of :",sum);
+
+// ================(6 = Find the factorial of a given number)================
+// function factorial(n) {
+//     let result = 1;
+//     let i = 1;
+//     while (i <= n) {
+//         result *= i;
+//         i++;
+//     }
+//     return result;
+// }
+// const number = prompt("enter number");
+// console.log(`The factorial of ${number} is ${factorial(number)}
+
+// =================(7 = Program to Print Fibonacci Series up to n)===========
+// function fibonacci(n) {
+//     let a = 0; 
+//     let b = 1; 
+
+//     console.log("Fibonacci Series up to " + n + ":");
+    
+//     while (a <= n) {
+//         console.log(a); 
+//         let i = a + b; 
+//         a = b; 
+//         b = i; 
+//     }
+// }
+// let n = prompt("enter number");
+// fibonacci(n);
+
+// ===================(8 = Program to Find the Sum of Digits of a Number)===============
+function sumOfDigits(num) {
+    let sum = 0;
+
+    while (num > 0) {
+        sum += num % 10; 
+        num = Math.floor(num / 10); 
+    }
+    return sum;
+}
+const number = prompt("enter number");
+console.log(`The sum of the digits of ${number} is ${sumOfDigits(number)}`)
+
+</script>
+</html>
